@@ -298,13 +298,15 @@ svg text{
 	line-height: 22px;
 }
 
-@media(max-width: 600px){
+@media(max-width: 700px){
 	
 	#svg{
 		margin-bottom: -250px;
+    display: none;
 	}
 	#svg text{
 		font-size: 100px;
+    display: none;
 	}
 	.timeline-item::before{
 		left: 7px;
