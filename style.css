@@ -459,8 +459,8 @@ svg text{
     padding: 30px;
   }
   .popup .popup_content{
-    width: 25rem;
-    height: 35rem;
+    width: 20rem;
+    height: 30rem;
   }
   .popup .popup_content .close{
     top: 1rem;
