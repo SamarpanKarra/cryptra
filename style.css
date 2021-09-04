@@ -257,13 +257,14 @@ svg text{
   position: fixed;
   padding: 3rem 0;
   /* background-color:#021841; */
-  height: 100vh;
-  margin-top: 2rem;
+  height: 85vh;
   overflow: hidden;
   z-index: 400;
   visibility: hidden;
   opacity: 0;
   line-height: 1.4rem;
+  width: 80%;
+  margin: 0 auto;
 }
 .popup:target{
   visibility: visible;
@@ -272,12 +273,12 @@ svg text{
 .popup .popup_content{
   background-color: rgba(255,255,255,0.973);
   /* box-shadow: 0 .4rem 0.3rem .3rem #555555ad; */
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1rem;
-  width: 25rem;
-  margin: 0 auto;
-  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
   position: relative;
+  margin-top: 2.5em;
 }
 .popup .popup_content#evenT1{
   position: relative;
@@ -298,8 +299,22 @@ svg text{
 .tabs a.active{
   border-bottom: 4px solid #00fff2;
 }
+
+.popup .popup_content .eve{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.popup .popup_content .eve .col{
+    width: 45%;
+    height: 40vh;
+}
+
 .popup .popup_content img{
   width: 100%;
+  height: 100%;
+  padding: 5px 0;
   border-radius: 1rem;
 }
 .popup .popup_content .close{
@@ -336,26 +351,22 @@ svg text{
   display: none;
 }
 .event1{
-  padding: 40px 0;
+  padding: 20px 0;
   animation: fadeEffect 1s;
 }
 .popup_content:first-of-type{
   display: block;
 }
+.c:first-of-type{
+  display: block;
+}
+
 .content--text tabs{
   display: flex;
   overflow: auto;
 }
-.popup_content #sub1{
-  
-  position: relative;
-  overflow: scroll;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-.content--text .des{
-  display: none;
-}
+
+
 @keyframes fadeEffect{
   from{
     opacity: 0;
@@ -368,8 +379,8 @@ svg text{
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 1px solid rgb(207, 208, 216);
+  background-color: #04e7fb;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -379,18 +390,19 @@ svg text{
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 10px;
   transition: 0.3s;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: rgb(0, 219, 201);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: rgb(16, 125, 250);
+  color: #fff;
 }
 
 /* Style the tab content */
@@ -399,17 +411,28 @@ svg text{
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+  width: 100%;
+  height: 100%;
 }
-.tabcontent#London{
-  /* display: block; */
-  /* overflow: scroll; */
-  overflow-x: scroll;
+
+.eve .col .tabcontent#London{
+  display: block;
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.tabcontent#London2{
+  display: block;
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
   overflow-y: scroll;
 }
 
-#Tokyo a{
+.tabcontent a{
   display: inline-block;
-  margin-left: 15px;
+  margin: 80px 50px;
   color: #fff;
   text-decoration: none;
   padding: 1rem 2rem;
@@ -446,6 +469,10 @@ svg text{
     padding: 30px;
     text-align: left;
   }
+
+  .popup .popup_content .eve .col{
+    height: 30vh;
+  }
   
   .containerr .card .contentBx::before{
     top: 0;
@@ -458,10 +485,26 @@ svg text{
     right: 0px;
     padding: 30px;
   }
-  .popup .popup_content{
-    width: 20rem;
-    height: 30rem;
+  .popup{
+    height: 100vh;
+    margin-top: 1em;
   }
+
+  .tab button {
+    padding: 7px;
+}
+    .popup .popup_content .eve{
+        flex-direction: column;
+    }
+
+    .event1{
+        padding: 0;
+    }
+
+    .popup .popup_content .eve .col{
+        width: 100%;
+    }
+
   .popup .popup_content .close{
     top: 1rem;
     right: 1rem;
@@ -471,6 +514,13 @@ svg text{
   filter: blur(20px);
   pointer-events: none;
 }
+
+@media (max-width:400px){
+    .tab button {
+        padding: 5px;
+    }
+}
+
 @media (max-width:600px){
   .navbar .logo img{
     width: 35%;
@@ -520,5 +570,8 @@ svg text{
   }
   svg text{
     font-size: 200px;
+  }
+  .col{
+    margin-top: 20px;
   }
 }
