@@ -295,6 +295,8 @@ svg text{
   text-align: left;
   white-space: nowrap;
   cursor: pointer;
+  color: #0b0944;
+  font-weight: 700;
 }
 .tabs a.active{
   border-bottom: 4px solid #00fff2;
