@@ -70,7 +70,7 @@
 	font-weight: 300;
 	line-height: 22px;
 }
-@media(max-width: 767px){
+@media(max-width: 375px){
 	.timeline-item::before{
 		left: 7px;
 	}
