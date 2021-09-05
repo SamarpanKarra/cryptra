@@ -13,8 +13,8 @@ body{
 }
 
 .about-section{
-    margin-top: 40px;
-    background: url(./Web-elemetns-20210829T064749Z-001/Web-elemetns/moritz-kindler-G66K_ERZRhM-unsplash.jpg) no-repeat left;
+    margin-top: 0px;
+    background: url(./Web-elemetns-20210829T064749Z-001/Web-elemetns/cse.jpg) no-repeat left;
     background-size: 65%;
     background-color: #fdfdfd;
     overflow: hidden;
@@ -32,6 +32,9 @@ body{
     font-size: 30px;
     font-weight: 800;
     color: #ffffff;
+}
+.inner-container h3{
+    color: aqua;
 }
 .border{
     height: 4px;
@@ -61,7 +64,7 @@ body{
         margin-top: 0;
     }
     .inner-container{
-        margin-top: 100px;
+        margin-top: 50px;
         padding: 60px;
     }
 }

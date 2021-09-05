@@ -449,7 +449,10 @@ svg text{
   overflow-y: scroll;
 }
 .tabcontent h3{
-  color: rgb(21, 255, 0);
+  color: rgb(51, 253, 0);
+}
+.contentBx.bx{
+  justify-content: center;
 }
 .tabcontent a{
   display: inline-block;
@@ -507,7 +510,7 @@ svg text{
     padding: 30px;
   }
   .popup{
-    height: 95vh;
+    height: 100vh;
     width: 95%;
     margin-top: 1rem;
   }
@@ -535,8 +538,13 @@ svg text{
   
 }
 
-
-@media (max-width:380px){
+@media (max-width:375px){
+  .popup{
+    height: 93vh;
+    width: 87%;
+  }
+}
+@media (max-width:360px){
   .popup .popup_content .eve .col{
     height: 30vh;
   }
@@ -544,7 +552,7 @@ svg text{
       padding: 5px;
   }
   .popup{
-    height: 90vh;
+    height: 100vh;
     width: 87%;
   }
 }
